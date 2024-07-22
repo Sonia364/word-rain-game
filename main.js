@@ -133,8 +133,8 @@
         
           updateLives() {
             this.lives--;
-            const livesElement = document.querySelector('#lives');
-            livesElement.innerText = `Lives: ${this.lives}`;
+            const livesElement = document.querySelector('#lives-count');
+            livesElement.innerText = `${this.lives}`;
         
             if (this.lives === 0) {
               this.gameOver();

@@ -1,4 +1,4 @@
-body{
+body {
     text-align: center;
 }
 
@@ -6,20 +6,22 @@ body{
     display: flex;
     flex-wrap: nowrap;
     width: 800px;
-    background: #eefcff;
+    background: #02b5d2c7;
     height: 600px;
     margin: auto;
-    box-shadow: 1px 2px 4px 2px #d7d7d7;
-}
-.game-infos{
-    width: 40%;
-    border: 2px dotted #000;
+    box-shadow: 0px 5px 10px 0px #d7d7
 }
 
-.gameZone{
+.game-infos {
+    width: 40%;
+    background: #0080e3c7;
+}
+
+.gameZone {
     position: relative;
     width: 60%;
 }
+
 #wordDisplay {
     font-size: 40px;
     font-family: cursive;
@@ -27,8 +29,9 @@ body{
     top: 40;
     left: 0;
     right: 0;
- }
-  .type-wrap {
+}
+
+.type-wrap {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -37,56 +40,74 @@ body{
     margin: auto;
     border-top: 4px solid black;
     padding-top: 30px;
-  }
+}
 
-  .type-wrap label{
+.type-wrap label {
     display: block;
     margin-bottom: 10px;
-  }
+}
 
-  .type-wrap input{
+.type-wrap input {
     height: 35px;
-  }
+}
 
-  div#lives {
-    height: 30%;
-    background: white;
+div#lives {
+    height: 5%;
     margin: 10px;
     padding-top: 20px;
-    }
+    display: flex;
+    align-items: center;
+}
 
-    div#score {
-        height: 10%;
-        background: white;
-        margin: 10px;
-        padding-top: 20px;
-    }
+#lives img {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
 
-    div#topScores-wrap{
-        height: 40%;
-        background: white;
-        margin: 10px;
-        padding-top: 20px;
-    }
+div#topScores-wrap {
+    height: 60%;
+    margin: 10px;
+    padding-top: 20px;
+    border: 1px solid #78eefa;
+}
 
-    .gameZone p {
-        color: red;
-        font-size: 30px;
-        margin: 50% 0;
-        text-align: center;
-    }
+div#score {
+    height: 20%;
+    margin: 10px;
+    padding-top: 20px;
+}
 
-    .level-text{
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        color: black;
-        margin-top: 20px;
-    }
 
-    .welcome-text {
-        margin-top: 20px;
-        color: blue;
-        font-size: 18px;
-    }
-  
+
+.gameZone p {
+    color: red;
+    font-size: 30px;
+    margin: 50% 0;
+    text-align: center;
+}
+
+.level-text {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+
+.welcome-text {
+    margin-top: 20px;
+    color: blue;
+    font-size: 18px;
+}
+
+.container {
+    background-image: url('images/blue-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Set the height to the viewport height */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
