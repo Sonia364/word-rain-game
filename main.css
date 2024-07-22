@@ -5,16 +5,17 @@ body {
 #gameContainer {
     display: flex;
     flex-wrap: nowrap;
-    width: 800px;
+    width: 100vh;
     background: #02b5d2c7;
-    height: 600px;
-    margin: auto;
+    height: 80vh;
+    /* margin: auto; */
     box-shadow: 0px 5px 10px 0px #d7d7
 }
 
 .game-infos {
     width: 40%;
     background: #0080e3c7;
+    color: #fff;
 }
 
 .gameZone {
@@ -48,7 +49,10 @@ body {
 }
 
 .type-wrap input {
-    height: 35px;
+    height: 5vh;
+    width: 30vh;
+    border-radius: 5px;
+    border: 1px solid #027fe3;
 }
 
 div#lives {
@@ -97,8 +101,10 @@ div#score {
 
 .welcome-text {
     margin-top: 20px;
-    color: blue;
+    color: #0165f3;
     font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 .container {
@@ -108,6 +114,32 @@ div#score {
     background-size: cover;
     height: 100vh; /* Set the height to the viewport height */
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
+}
+
+h2#swal2-title {
+    color: #000;
+    font-size: 18px;
+}
+
+input#swal2-input {
+    height: 5vh;
+}
+
+button.swal2-confirm.swal2-styled {
+    background: #0d6e7b;
+}
+
+button#restart-game {
+    background: #0d6e7b;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
 }
